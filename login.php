@@ -12,7 +12,7 @@
                 <div class="w-full max-w-xs">
 
                     <!-- login form -->
-                    <form class="bg-white px-8 pt-6 pb-8 mb-4" method="post" action="checkLogin.php" autocompleate = "off">
+                    <form class="bg-white px-8 pt-6 pb-8 mb-4" method="post" action="checklogin.php" autocompleate = "off">
                         <div class="mb-4">
                             <label class="block text-grey-darker text-sm font-bold mb-2" for="username">
                             username

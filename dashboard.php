@@ -2,9 +2,9 @@
     require_once('config.php');
     session_start();
 
-    echo $_SESSION["IDMember"] = "asd";
-    echo $_SESSION["Name"] = "GG";
-    echo $_SESSION["Status"] = "ผู้ขายสินค้า";
+    echo $_SESSION["IDMember"];
+    echo $_SESSION["Name"];
+    echo $_SESSION["Status"];
 ?>
 
 
