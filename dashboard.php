@@ -1,5 +1,5 @@
 <?php 
-    require_once('config.php');
+    require_once 'System/config.php';
     session_start();
 
     $_SESSION["IDMember"];
