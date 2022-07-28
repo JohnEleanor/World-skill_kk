@@ -3,7 +3,8 @@ session_start();
 session_unset();
 session_destroy();
 
-header('location:index.php');
+header('Refresh:0 index.php');
+echo "<script type =text/javascript>alert('ออกสู่ระบบสำเร็จ');</script>";
 exit();
 ?>
 <!DOCTYPE html>

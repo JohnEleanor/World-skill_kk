@@ -11,7 +11,7 @@
     <!-- header -->
     <header class="w-full px-6">
         <div class="container mx-auto max-w-xl md:flex justify-between items-center bg-color: black;">
-            <a href="index.html" class="block py-6 w-full text-center md:text-left md:w-auto text-grey-dark no-underline flex justify-center items-center">
+            <a href="index.php" class="block py-6 w-full text-center md:text-left md:w-auto text-grey-dark no-underline flex justify-center items-center">
                 Your Logo
             </a>
             <div class="w-full md:w-auto mb-6 md:mb-0">
