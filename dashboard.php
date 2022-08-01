@@ -53,7 +53,7 @@
                     <a href="register.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">สมัครสมาชิก</a>
                 <?php }else{  ?>
                     <a href="logout.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">ออกจากระบบ</a>
-                    <button class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg"><?php echo("ผู้ใช้: ".$_SESSION["Name"]."") ?> </button>
+                    <button class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg"><?php echo("ผู้ใช้: {$_SESSION["Name"]} ") ?> </button>
                 <?php }?>
             </div>
         </div>

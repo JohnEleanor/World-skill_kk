@@ -64,15 +64,6 @@ require_once('System/config.php');
                     <td class="p-2 border-t border-grey-light"><?=$result['Seller']?></td>
                     <td class="p-2 border-t border-grey-light"><?=$result['OrderDate']?></td>
                 </tr>
-                <!-- <tr>
-                    <td class="p-2 border-t border-grey-light">2</td>
-                    <td class="p-2 border-t border-grey-light">Product B</td>
-                    <td class="p-2 border-t border-grey-light">1</td>
-                    <td class="p-2 border-t border-grey-light">150฿</td>
-                    <td class="p-2 border-t border-grey-light">150฿</td>
-                    <td class="p-2 border-t border-grey-light">ShopB</td>
-                    <td class="p-2 border-t border-grey-light">22/10/2019</td>
-                </tr> -->
 
                 <?php } ?>
             </tbody>

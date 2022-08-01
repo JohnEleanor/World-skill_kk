@@ -34,7 +34,7 @@
             </label> 
             <select  class="appearance-none border w-full py-2 px-3 text-grey-darker leading-tight" name="type" id="type" required>
                     <option value="">โปรดระบุสิทธิ์ของผู้ใช้งาน</option>
-                     <option value="ผู้ซื้อสินค้า">ผู้ซื้อสินค้า</option>
+                    <option value="ผู้ซื้อสินค้า">ผู้ซื้อสินค้า</option>
                     <option value="ผู้ขายสินค้า">ผู้ขายสินค้า</option>
                     <option value="ผู้ซื้อและขายสินค้า">ผู้ซื้อและขายสินค้า</option>
             </select>
