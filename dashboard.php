@@ -80,22 +80,21 @@
             </h3>
         </div>
 
-        <?php 
-        $querry = mysqli_query($conn,'SELECT * FROM tb_products');
-        while($result = mysqli_fetch_array($querry)){
-        ?>
+        
 
         <div class="container max-w-xl mx-auto text-center flex flex-wrap items-start md:flex-no-wrap">
-            <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-                <img src="img/im.png" class="mb-6" />
-                <h2 class="text-2xl mb-2"><?=$result['idProducts']?></h2>
-                <p class="mt-3 mx-auto text-sm leading-normal"><?=$result['Summary Info']?></p>
-                <a href="group.html" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded">ราคา <?=$result['Price']?> </a>
-            </div>
-
+            <?php
+            $query = mysqli_query($conn, 'SELECT * FROM tb_products');
+            while ($result = mysqli_fetch_array($query)) {
+            ?>
+                <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
+                    <img src="img/im.png" class="mb-6" />
+                    <h2 class="text-2xl mb-2"><?php echo $result['idProducts']; ?></h2>
+                    <p class="mt-3 mx-auto text-sm leading-normal"><?php echo $result['Summary Info']; ?></p>
+                    <a href="group.html" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded">ราคา <?php echo $result['Price']; ?> </a>
+                </div>
+            <?php } ?>
         </div>
-    </div>
-    <?php } ?>
 
     <footer class="w-full px-6 border-t">
         <div class="container mx-auto max-w-xl py-6 flex flex-wrap md:flex-no-wrap justify-between items-center text-sm">

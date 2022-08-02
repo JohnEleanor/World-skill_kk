@@ -1,3 +1,6 @@
+<?php 
+require_once('System/config.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,30 +49,19 @@
         </div>
 
         <div class="container max-w-xl mx-auto text-center flex flex-wrap items-start md:flex-no-wrap">
-            <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-                <img src="img/im.png" class="mb-6" />
-
-                <h2 class="text-2xl mb-2">Ut enim ad minim veniam officia deserunt</h2>
-                <p class="mt-3 mx-auto text-sm leading-normal">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-                <a href="group.html" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">More info</a>
-            </div>
-
-            <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-                <img src="img/im.png" class="mb-6" />
-                <h2 class="text-2xl mb-2">Ut enim ad minim veniam officia deserunt</h2>
-                <p class="mt-3 mx-auto text-sm leading-normal">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-                <a href="group.html" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">More info</a>
-            </div>
-
-            <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-                <img src="img/im.png" class="mb-6" />
-
-                <h2 class="text-2xl mb-2">Ut enim ad minim veniam officia deserunt</h2>
-                <p class="mt-3 mx-auto text-sm leading-normal">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-                <a href="group.html" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">More info</a>
-            </div>
+            <?php
+            $query = mysqli_query($conn, 'SELECT * FROM tb_products');
+            while ($result = mysqli_fetch_array($query)) {
+                echo $result['idProducts'];
+            ?>
+                <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
+                    <img src="img/im.png" class="mb-6" />
+                    <h2 class="text-2xl mb-2"><?php echo $result['idProducts']; ?></h2>
+                    <p class="mt-3 mx-auto text-sm leading-normal"><?php echo $result['Summary Info']; ?></p>
+                    <a href="group.html" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded">ราคา <?php echo $result['Price']; ?> </a>
+                </div>
+            <?php } ?>
         </div>
-    </div>
     <!-- /home content -->
 
     <!-- footer -->
