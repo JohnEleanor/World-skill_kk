@@ -1,6 +1,6 @@
 <?php 
 require_once('System/config.php');
-
+session_start();
 
 
 ?>
@@ -18,32 +18,46 @@ require_once('System/config.php');
 
 
 </script>
+<header class="w-full px-6">
+        <div class="container mx-auto max-w-xl md:flex justify-between items-center bg-color: black;">
+            <a href="index.php" class="block py-6 w-full text-center md:text-left md:w-auto text-grey-dark no-underline flex justify-center items-center">
+                Your Logo
+            </a>
+            <div class="w-full md:w-auto mb-6 md:mb-0">
+            <?php if($_SESSION["Status"] == "ผู้ซื้อสินค้า"){ ?>
+                <a href="dashboard.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">หน้าแรก</a>
+                <a href="orders.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">รายการสินค้าที่ได้สั่งซื้อ</a>
+                <?php }elseif($_SESSION["Status"] == "ผู้ขายสินค้า"){  ?>
+                    <a href="dashboard.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">หน้าแรก</a>
+                    <a href="products.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">รายการสินค้าที่ลงขาย</a>
+                    <a href="sales.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">รายการสินค้าที่ถูกสั่งซื้อ</a>
+             <?php }elseif($_SESSION["Status"] == "ผู้ซื้อและขายสินค้า"){  ?>
+                    <a href="dashboard.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">หน้าแรก</a>
+                <a href="products.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">รายการสินค้าที่ลงขาย</a>
+                <a href="sales.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">รายการสินค้าที่ถูกสั่งซื้อ</a>
+                <a href="orders.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">รายการสินค้าที่ได้สั่งซื้อ</a>
+                <?php }?>
+            </div>
+            <div class="w-full md:w-auto mb-6 md:mb-0 text-center md:text-right">
+            <?php if($_SESSION["IDMember"] == "") {?>
+                    <a href="login.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">เข้าสู่ระบบ</a>
+                    <a href="register.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">สมัครสมาชิก</a>
+                <?php }else{  ?>
+                    <a href="logout.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">ออกจากระบบ</a>
+                    <button class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg"><?php echo("ผู้ใช้: {$_SESSION["Name"]} ") ?> </button>
+                <?php }?>
+            </div>
+        </div>
+
+    </header>
 <body>
 
     <!-- register form -->
 
-    <!-- <div class = "flex item-center justify-center"> -->
+    <div class = "container justify-center">
     <form class="bg-white px-8 pt-6 pb-8 mb-4" action= "System/update.php" method = "post">
 
-        
-        
-
-
-        <!-- <div class="flex flex-wrap -mx-3 mb-4">
-            <div class="w-full md:w-1/2 px-3">
-                <label class="block text-grey-darker text-sm font-bold mb-2" for="firstname">
-                ชื่อ
-                </label>
-                <input class="appearance-none border w-full py-2 px-3 text-grey-darker leading-tight"
-                 id="firstname" name = "firstname" type="text" placeholder="คำแนะนำ เปลี่ยนด้วย" required>
-            </div>
-            <div class="w-full md:w-1/2 px-3">
-                <label class="block text-grey-darker text-sm font-bold mb-2" for="lastname">
-                นามสกุล
-                </label>
-                <input class="appearance-none border w-full py-2 px-3 text-grey-darker leading-tight" id="lastname" name = "lastname" type="text" placeholder="คำแนะนำ เปลี่ยนด้วย" required>
-            </div>
-        </div> -->
+    
 
 
         <?php 
@@ -113,16 +127,16 @@ require_once('System/config.php');
             <input type = "submit" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg" name = "btnUpdate" id = "btnUpdate" value = "update">
         </div>
     </form>
-<!-- </div> -->
+</div>
 
-    
-    <!-- /register form -->
+<footer class="w-full px-6 border-t">
+        <div class="container mx-auto max-w-xl py-6 flex flex-wrap md:flex-no-wrap justify-between items-center text-sm">
+            &copy;2019 Your Company. All rights reserved.
+            <div class="pt-4 md:p-0 text-center md:text-right text-xs">
+                Web Design & Development
+            </div>
+        </div>
+    </footer>
 
-    <!-- footer -->
-    <p class="text-center text-grey text-xs">
-        &copy;2019 Your Company. All rights reserved.
-    </p>
-    <!-- /footer -->
 </body>
 </html>
-

@@ -18,13 +18,14 @@ require_once('System/config.php');
                 Your Logo
             </a>
             <div class="w-full md:w-auto mb-6 md:mb-0">
-                <a href="index.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">หน้าแรก</a>
+                <!-- <a href="index.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">หน้าแรก</a> -->
+                
                 <!-- <a href="products.html" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 ">รายการสินค้าที่ลงขาย</a>
                 <a href="sales.html" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 ">รายการสินค้าที่ถูกสั่งซื้อ</a>
                 <a href="orders.html" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 ">รายการสินค้าที่ได้สั่งซื้อ</a> -->
             </div>
             <div class="w-full md:w-auto mb-6 md:mb-0 text-center md:text-right">
-                <a href="login.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">เข้าสู่ระบบ</a>
+            <a href="login.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">เข้าสู่ระบบ</a>
                 <a href="register.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">สมัครสมาชิก</a>
         </div>
         </div>
@@ -52,7 +53,7 @@ require_once('System/config.php');
             <?php
             $query = mysqli_query($conn, 'SELECT * FROM tb_products');
             while ($result = mysqli_fetch_array($query)) {
-                echo $result['idProducts'];
+                // echo $result['idProducts'];
             ?>
                 <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
                     <img src="img/im.png" class="mb-6" />

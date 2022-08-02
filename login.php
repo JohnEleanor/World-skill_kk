@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="asset/genius.css">
 </head>
 <body>
+        <!-- header -->
+        <header class="w-full px-6">
+        <div class="container mx-auto max-w-xl md:flex justify-between items-center bg-color: black;">
+            <a href="index.php" class="block py-6 w-full text-center md:text-left md:w-auto text-grey-dark no-underline flex justify-center items-center">
+                Your Logo
+            </a>
+            <div class="w-full md:w-auto mb-6 md:mb-0">
+                <!-- <a href="index.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">หน้าแรก</a> -->
+                
+                <!-- <a href="products.html" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 ">รายการสินค้าที่ลงขาย</a>
+                <a href="sales.html" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 ">รายการสินค้าที่ถูกสั่งซื้อ</a>
+                <a href="orders.html" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 ">รายการสินค้าที่ได้สั่งซื้อ</a> -->
+            </div>
+            <div class="w-full md:w-auto mb-6 md:mb-0 text-center md:text-right">
+            <a href="login.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">เข้าสู่ระบบ</a>
+                <a href="register.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">สมัครสมาชิก</a>
+        </div>
+        </div>
+
+    </header>
+    <!-- /header -->
     <div class="h-screen">  
         <div class="container mx-auto h-full flex justify-center items-center">
             <div class="w-1/3">
@@ -42,5 +63,16 @@
             </div>
         </div>
     </div>
+
+     <!-- footer -->
+     <footer class="w-full px-6 border-t">
+        <div class="container mx-auto max-w-xl py-6 flex flex-wrap md:flex-no-wrap justify-between items-center text-sm">
+            &copy;2019 Your Company. All rights reserved.
+            <div class="pt-4 md:p-0 text-center md:text-right text-xs">
+                Web Design & Development
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
 </body>
 </html>

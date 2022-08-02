@@ -12,22 +12,29 @@
 </script>
 <body>
 
+<header class="w-full px-6">
+        <div class="container mx-auto max-w-xl md:flex justify-between items-center bg-color: black;">
+            <a href="index.php" class="block py-6 w-full text-center md:text-left md:w-auto text-grey-dark no-underline flex justify-center items-center">
+                Your Logo
+            </a>
+            <div class="w-full md:w-auto mb-6 md:mb-0">
+
+            </div>
+            <div class="w-full md:w-auto mb-6 md:mb-0 text-center md:text-right">
+            <a href="login.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">เข้าสู่ระบบ</a>
+                <a href="register.php" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">สมัครสมาชิก</a>
+        </div>
+        </div>
+
+    </header>
+    <!-- /header -->
+
     <!-- register form -->
 
-    <!-- <div class = "flex item-center justify-center"> -->
+    
+    <div class = "flex item-center justify-center">
     <form class="bg-white px-8 pt-6 pb-8 mb-4" action= "System/register.php" method = "post">
-        <!-- <div class="flex flex-wrap -mx-3 mb-4">
-            <div class="w-full md:w-1/2 px-3">
-                <input type="checkbox" id="seller" name = "seller" checked>
-                <label for="seller">สมัครเป็นผู้ซื้อ</label>
-            </div>
-            <div class="w-full md:w-1/2 px-3">
-                <input type="checkbox" id="buyer" name = "buyer" checked>
-                <label for="buyer">สมัครเป็นผู้ขาย</label>
-            </div> //old
-        </div> -->
 
-        
         <div class="mb-4">
             <label class="block text-grey-darker text-sm font-bold mb-2" >
             สิทธิ์ของผู้ใช้งาน 
@@ -55,7 +62,6 @@
                     <option value="9">Group 9</option>
                     <option value="10">Group 10</option>
             </select>
-        </div>
 
 
         <div class="flex flex-wrap -mx-3 mb-4">
@@ -132,15 +138,18 @@
             <input type = "submit" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg" name = "btnInsert" id = "btnInsert" value = "Register">
         </div>
     </form>
-<!-- </div> -->
+</div>
 
     
     <!-- /register form -->
 
-    <!-- footer -->
-    <p class="text-center text-grey text-xs">
-        &copy;2019 Your Company. All rights reserved.
-    </p>
-    <!-- /footer -->
+    <footer class="w-full px-6 border-t">
+        <div class="container mx-auto max-w-xl py-6 flex flex-wrap md:flex-no-wrap justify-between items-center text-sm">
+            &copy;2019 Your Company. All rights reserved.
+            <div class="pt-4 md:p-0 text-center md:text-right text-xs">
+                Web Design & Development
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
