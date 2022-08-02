@@ -60,7 +60,7 @@ require_once('System/config.php');
                     <td class="p-2 border-t border-grey-light"><?=$result['Summary Info']?></td>
                     <td class="p-2 border-t border-grey-light"><?=$result['PostOn']?></td>
                     <td>
-                        <a href="System/update.php?Update=<?php echo $result['idProducts']?>" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">Edit</a>
+                        <a href="update.php?Update=<?php echo $result['idProducts']?>" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">Edit</a>
                         <a href="System/delete.php?Del=<?php echo $result['idProducts']?>" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">Delete</a>
                     </td>
                 </tr>
