@@ -8,18 +8,16 @@
     $result = mysqli_fetch_array($query);
 
     echo $strSql;
-    if($result){ //STATUS เป็นจริง
+    if($result){ 
 
         $_SESSION["IDMember"] = $result["IDMember"];
         $_SESSION["Status"] = $result["Status"];
         $_SESSION["Name"] = $result["Name"];
         
-        // print( $_SESSION["Name"]);
-
         header('Refresh:0 ../dashboard.php');
         echo "<script type =text/javascript>alert('ยินดีต้อนรับ: {$_SESSION["Name"]}');</script>"; 
-        // CREADIT : จีเนียส
-    }else{ // STATUS ไม่เป็นจริง
+
+    }else{ 
         echo "<script type =text/javascript>alert('รหัสผ่านไม่ถูกต้อง');</script>";
         header('Refresh:0 ../login.php');
     }

@@ -11,8 +11,6 @@ $sql = "UPDATE `tb_products` SET
 `Summary Info`='{$_POST['Info']}',
 `PostOn` = '{$_POST['PostOn']}' WHERE idProducts = '{$_POST['idProducts']}'";
 
-echo $sql;
-// print_r($_POST);
 
 $query = mysqli_query($conn, $sql);
 if ($query){

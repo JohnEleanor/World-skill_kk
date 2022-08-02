@@ -23,7 +23,7 @@ require_once 'config.php';
                 '".$_POST['type']."', 
                 '".$_POST['Group']."'
                 )";
-            // echo($sql);
+
             $query = mysqli_query($conn, $sql);
             if ($query){
                 echo "<br>เพิ่มข้อมูลสำเร็จ";
