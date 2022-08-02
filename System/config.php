@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$db = "db_farm"; 
+$db = "db_collaborativefarming"; 
 
 $conn = mysqli_connect($host,$user,$password,$db);
 // mysqli_query($conn, "SET CHARACTER SET 'uft8'");
