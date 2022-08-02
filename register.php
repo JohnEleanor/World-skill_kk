@@ -6,10 +6,6 @@
     <link rel="stylesheet" href="asset/style.css">
     
 </head>
-<script language = "javascript"> 
-
-
-</script>
 <body>
 
 <header class="w-full px-6">
