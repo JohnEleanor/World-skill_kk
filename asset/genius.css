@@ -1,0 +1,17 @@
+.gg {
+    /* border: 5px solid black; */
+    border-radius: 20px;
+    border-right: 5px solid blue;
+    border-left:  5px solid blue;
+    box-shadow: 10px 10px 40px rgb(133, 133, 133);
+}
+
+.button11 {
+    font-family: 'Kanit';
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border-bottom: 3px solid blue;
+    border-right: 3px solid blue;
+    background-color: rgb(153, 146, 212);
+    box-shadow: 10px 10px 10px rgb(133, 133, 133);
+}
