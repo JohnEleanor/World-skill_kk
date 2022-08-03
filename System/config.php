@@ -6,7 +6,7 @@ $db = "db_collaborativefarming";
 
 $conn = mysqli_connect($host,$user,$password,$db);
 
-if (!$conn) {
+if (!$conn){
     echo "can not connect DB ";
 }
 ?>

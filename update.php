@@ -98,30 +98,6 @@ session_start();
             </label>
             <input class="appearance-none border w-full py-2 px-3 text-grey-darker leading-tight" id="district" name = "PostOn" type="text" placeholder="คำแนะนำ เปลี่ยนด้วย" required value = "<?php echo $result['PostOn'] ?>">
         </div>
-        <!-- <div class="mb-4">
-            <label class="block text-grey-darker text-sm font-bold mb-2" for="subdistrict">
-            ตำบล/แขวง
-            </label>
-            <input class="appearance-none border w-full py-2 px-3 text-grey-darker leading-tight" id="subdistrict" name = "subdistrict" type="text" placeholder="คำแนะนำ เปลี่ยนด้วย" required>
-        </div>
-        <div class="mb-4">
-            <label class="block text-grey-darker text-sm font-bold mb-2" for="zipcode">
-            รหัสไปรษณีย์
-            </label>
-            <input class="appearance-none border w-full py-2 px-3 text-grey-darker leading-tight" id="zipcode"  name = "zipcode" type="text" placeholder="คำแนะนำ เปลี่ยนด้วย" required>
-        </div>
-        <div class="mb-4">
-            <label class="block text-grey-darker text-sm font-bold mb-2" for="password">
-            รหัสผ่าน
-            </label>
-            <input class="appearance-none border w-full py-2 px-3 text-grey-darker mb-3 leading-tight" id="password" name = "password" type="password" placeholder="******************" required>
-        </div>
-        <div class="mb-4">
-            <label class="block text-grey-darker text-sm font-bold mb-2" for="confirm-password">
-            ยืนยันรหัสผ่าน
-            </label>
-            <input class="appearance-none border w-full py-2 px-3 text-grey-darker mb-3 leading-tight" id="confirm-password" name = "confirm-password" type="password" placeholder="******************" required>
-        </div> -->
         <div class="flex items-center justify-between">
             <!-- <a href="index.html" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg">Register</a> -->
             <input type = "submit" class="inline-block no-underline bg-black text-white text-sm py-2 px-3 rounded-lg" name = "btnUpdate" id = "btnUpdate" value = "update">
